@@ -8,6 +8,7 @@ const Dashboard = () => {
     <div className={styles.dframe}>
       <div className={styles.topbar}>
         <div className={styles.name}>CC Booking App</div>
+        {/* <h2>fhdu</h2> */}
       </div>
       <div className={styles.scontainer}>
         <div className={styles.lcontainer}>

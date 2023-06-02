@@ -12,6 +12,7 @@ function App() {
      {/* <div className="App"> */}
       {/* <LoginPage></LoginPage> */}
       <Dashboard></Dashboard>
+      
     {/* </div> */}
     </GoogleOAuthProvider>
   );

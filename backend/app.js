@@ -9,6 +9,7 @@ app.use(express.json());
 
 const authRouter = require('./routes/authRoutes');
 
+
 app.use((req, res, next) => {
   const {token} = req.body;
   if (token) {
