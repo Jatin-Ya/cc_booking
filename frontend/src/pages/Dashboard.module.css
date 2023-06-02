@@ -1,0 +1,239 @@
+.dframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0px 0px 10px; */
+
+  position: relative;
+  width: 100%;
+  height: fit-content;
+
+  background: #5cdb95;
+}
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  /* padding: 30px 30px; */
+  padding-right: 2%;
+  padding-left: 2%;
+  gap: 10px;
+
+  width: 96%;
+  height: 10%;
+
+  background: #05386b;
+}
+.name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.rcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+
+  width: 30%;
+  height: fit-content;
+
+  background: #8ee4af;
+  border-radius: 15px;
+}
+.calendarHeading {
+  width: 359px;
+  height: fit-content;
+
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  /* line-height: 46px; */
+  /* identical to box height */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #edf5e1;
+  margin: 0px;
+  
+  /* Inside auto layout */
+  
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+.calendar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0x 5%;
+  gap: 10px;
+  
+  width: 100%;
+  height: 392px;
+  
+  background: #05386b;
+  border-radius: 20px;
+  
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.bookings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 5%;
+  gap: 6px;
+  
+  width: 90%;
+  height: fit-content;
+  
+  background: #379683;
+  border-radius: 20px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.bookingsHeading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  
+  color: #ffffff;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.bookingsDetails {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  
+  color: #ffffff;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.bookingsDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+.scontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5%;
+  gap: 47px;
+
+  width: 90%;
+  height: fit-content;
+}
+.lcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: 5px; */
+  gap: 33px;
+
+  /* width: 870px; */
+  width: 70%;
+  height: fit-content;
+
+  /* background: #8ee4af; */
+}
+.mybookingContainer{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 15px 5%;
+gap: 20px;
+
+width: 90%;
+height: fit-content;
+
+background: #8EE4AF;
+border-radius: 20px;
+
+/* border-radius: 20px; */
+
+/* Inside auto layout */
+/* 
+flex: none;
+order: 0;
+flex-grow: 0; */
+}
+.newbookingContainer{
+  display: flex;
+flex-direction: row;
+align-items: center;
+/* padding: 32px 20px; */
+padding: 15px 5%;
+gap: 130px;
+
+width: 90%;
+height: fit-content;
+
+background: #8EE4AF;
+border-radius: 20px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+

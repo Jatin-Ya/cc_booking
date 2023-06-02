@@ -1,0 +1,28 @@
+.google-login-button {
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: rgb(252, 252, 252);
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background: black;
+  font-weight: 500;
+  height: 17%;
+  /* line-height: 36px; */
+  /* margin: 0; */
+  border-radius: 1vh;
+  margin-bottom: 20%;
+  /* min-width: 120px; */
+  width: 80%;
+  align-self: bottom;
+  /* padding: 0 16px; */
+  text-align: center;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  white-space: nowrap;
+}
+.google-login-button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
