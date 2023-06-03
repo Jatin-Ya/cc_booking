@@ -1,0 +1,31 @@
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  /* padding: 30px 30px; */
+  padding-right: 2%;
+  padding-left: 2%;
+  gap: 10px;
+
+  width: 96%;
+  height: 10%;
+
+  background: #05386b;
+}
+.name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.25);
+}

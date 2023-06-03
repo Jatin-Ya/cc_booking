@@ -2,18 +2,46 @@ import { Card, CardContent } from '@mui/material';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import styles from './Dashboard.module.css';
+import TopBar from '../components/TopBar';
+import Request from '../components/Request';
+
+const Requests = [
+  {
+    title: 'Internship guidence session',
+    date: '21/5/2023',
+    time: '7:00 PM to 8:00 PM',
+    status: 'Accepted',
+    description:
+      "Discription : \nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  },
+  {
+    title: 'Internship guidence session',
+    date: '22/5/2023',
+    time: '7:00 PM to 8:00 PM',
+    status: 'Accepted',
+    description:
+      "Discription : \nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  },
+];
 
 const Dashboard = () => {
+  const calDate = '21/5/2023';
   return (
     <div className={styles.dframe}>
-      <div className={styles.topbar}>
+      {/* <div className={styles.topbar}>
         <div className={styles.name}>CC Booking App</div>
-        {/* <h2>fhdu</h2> */}
-      </div>
+      </div> */}
+      <TopBar />
       <div className={styles.scontainer}>
         <div className={styles.lcontainer}>
           <div className={styles.mybookingContainer}>
             <h2 className={styles.calendarHeading}>My Bookings</h2>
+            {
+              Requests.map((request) => {
+                return (<Request title={request.title} date={request.date} time={request.time} status={request.status} description={request.description}></Request>)
+              })
+            }
+            {/* <Request></Request>
             <div className={styles.bookings}>
               <div className={styles.bookingsHeading}>
                 Internship guidence session
@@ -29,23 +57,7 @@ const Dashboard = () => {
                   "\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
                 }
               </div>
-            </div>
-            <div className={styles.bookings}>
-              <div className={styles.bookingsHeading}>
-                Internship guidence session
-              </div>
-              <div className={styles.bookingsDetails}>Date : 21/5/2023</div>
-              <div className={styles.bookingsDetails}>
-                Time : 7:00 PM to 8:00 PM
-              </div>
-              <div className={styles.bookingsDetails}>Status : Accepted</div>
-              <div className={styles.bookingsDescription}>
-                {'Discription : '}
-                {
-                  "\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-                }
-              </div>
-            </div>
+            </div> */}
           </div>
           <div className={styles.newbookingContainer}>
             <h2 className={styles.calendarHeading}>Create new Booking</h2>
@@ -57,7 +69,10 @@ const Dashboard = () => {
         <div className={styles.rcontainer}>
           <div className={styles.calendarHeading}>Bookings Calendar</div>
           <div className={styles.calendar}></div>
-          <div className={styles.bookings}>
+          {
+            Requests.filter((request) => {return request.date === calDate}).map((request) => {return (<Request title={request.title} date={request.date} time={request.time} status={request.status} description={request.description}></Request>)})
+          }
+          {/* <div className={styles.bookings}>
             <div className={styles.bookingsHeading}>
               Internship guidence session
             </div>
@@ -72,7 +87,7 @@ const Dashboard = () => {
                 "\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
               }
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,0 +1,136 @@
+.displayCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-self: start; */
+  justify-content: flex-start;
+  gap: 5%;
+  /* padding: 10px; */
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background: #5cdb95;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 35px 30px;
+  gap: 50px;
+
+  /* position: absolute; */
+  width: 80%;
+  height: 603px;
+  /* left: calc(50% - 1139px / 2 + 0.5px);
+  top: calc(50% - 603px / 2 + 46.5px); */
+
+  background: #379683;
+  border-radius: 20px;
+}
+.heading {
+  width: 389px;
+  height: 24px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 24px;
+  /* identical to box height, or 60% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #edf5e1;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 40px;
+
+  width: 80%;
+  height: fit-content;
+
+  /* background-color: #edf5e1; */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+
+  
+
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+
+  width: 45%;
+  height: 243px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+
+  width: 45%;
+  height: 296px;
+  
+
+  
+}
+.buttonContainer{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  width: 247px;
+height: 52px;
+
+background: #05386B;
+border-radius: 15px;
+
+
+}
+.buttonText{
+  /* position: absolute; */
+width: 98px;
+height: 24px;
+/* left: calc(50% - 98px/2 - 0.5px);
+top: calc(50% - 24px/2); */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 24px;
+/* identical to box height, or 80% */
+
+/* display: flex; */
+/* align-items: center; */
+text-align: center;
+
+color: #FFFFFF;
+}
