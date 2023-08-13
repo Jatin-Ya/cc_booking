@@ -1,0 +1,1 @@
+export const baseURL = 'http://node:8000/api/v1/';

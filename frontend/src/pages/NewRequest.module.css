@@ -134,3 +134,7 @@ text-align: center;
 
 color: #FFFFFF;
 }
+.inputContainer{
+  width: 90%;
+height: 52px;
+}

@@ -9,8 +9,7 @@ import { useEffect, useState } from 'react';
 import { useGoogleLogin } from '@react-oauth/google';
 import css from './googleLoginButton.module.css';
 import axios from 'axios';
-
-const baseURL = 'http://node:8000/api/v1/auth/login';
+import { baseURL } from '../config';
 
 const GoogleLoginButton = () => {
   const [user, setUser] = useState(null);
@@ -23,7 +22,7 @@ const GoogleLoginButton = () => {
   useEffect(() => {
     if (user) {
       try{
-        axios.post(baseURL, {
+        axios.post(baseURL+'auth/login', {
           token: user.access_token,
         }).then((res) => {
           console.log(res);
